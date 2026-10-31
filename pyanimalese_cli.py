@@ -10,8 +10,13 @@ char_sounds_high = {}
 
 for idx, item in enumerate(char_list):
     str_idx = str(idx + 1).zfill(2)
+<<<<<<< HEAD:pyanimalese_cli.py
     char_sounds[item] = AudioSegment.from_mp3(f'./sources/{str_idx}.padata')
     char_sounds_high[item] = AudioSegment.from_mp3(f'./sources/high/{str_idx}.padata')
+=======
+    char_sounds[item] = f'./sources/{str_idx}.mp3'
+    char_sounds_high[item] = f'./sources/high/{str_idx}.mp3'
+>>>>>>> parent of 4a8371e (음원 확장자 변경(mp3와 동일)):voice Gen.py
 
 while True:
     source = input('원본 문자열 입력: ')
